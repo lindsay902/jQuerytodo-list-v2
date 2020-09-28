@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -20,15 +21,26 @@
             <div>
                 <h1 class="list-header">My To Do List</h1>
             </div>
-            <div id="todoMenu" class="to-do-menu">
-                <input id="addTodoTextInput" class="add-todo-text-input" type="text" 
-                placeholder="Add a task:">
-            </div>
-            <div>
-                <ul id="todos" class="todos" aria-label="List of to do tasks">
+            
+            <div class="container" >
+                <ul type="radio" id="todos" class="todos" aria-label="List of to do tasks">
+                    <li>lunch</li>
                 </ul> 
             </div>
-        
+
+            <div id="todoMenu" class="to-do-menu">
+                <span class="textinput">
+                <input id="addTodoTextInput" class="add-todo-text-input" type="text" 
+                placeholder="Add a task:">
+                </span>
+                <span class="edit-button">
+                    <button id="edit" class="fa fa-edit"></button>
+                    <button id="trash" class='fas fa-trash-alt'></button>
+                </span>
+                
+            </div>
+            
+          
         
         </div> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

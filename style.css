@@ -41,8 +41,23 @@ h1 {
 
 .line-strike {
     text-decoration: line-through;
+    text-decoration-color: crimson;
+
 }
 
 li:hover {
     cursor: pointer;
   }
+
+li {
+    font-size: medium;
+    padding-top: 1px;
+}
+
+.edit-button {
+    margin-left: 25%;
+}
+
+.button {
+    content: "✖";
+}

@@ -7,13 +7,29 @@ $(document).ready(() => {
                 $(event.currentTarget).toggleClass('line-strike');
             });
             $('#addTodoTextInput').val('');
-            };
-     })
+        }
+        
+    })
+
+    $('#trash').hide();
+
+    $('#edit').on('click', () => {
+        $('#trash').toggle();
+    });
+    
+    //if (currentTarget.classList.contains('line-strike')) {
+        //$('#trash').on('click', event => {
+            //$(event.CurrentTarget).hide();
+       // })
+    //};
 
     $('li').on('click', event => {
         $(event.currentTarget).toggleClass('line-strike');
     })
 
-
+    $('#trash').on('click', () => {
+        $('.line-strike').hide();
+    })
+    
 
 })
